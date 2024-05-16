@@ -3,6 +3,7 @@ let Support = document.getElementById('Support');
 let nav = document.getElementById('nav');
 let dialog =document.getElementById('dialog');
 let blurer = document.getElementById('blurer');
+let overlay = document.getElementById('overlay');
 
 // Btn Scroll 
 window.onscroll = function(){
@@ -14,7 +15,7 @@ window.onscroll = function(){
         btn.style.display = "none";
     }
 }
-btn.onclick =function(){
+btn.onclick = function(){
     scroll({
         left:0,
         top:0,
@@ -27,11 +28,16 @@ window.onscroll = function(){
     if(scrollY >= 50)
     {
         Support.style.display = "none";
+        overlay.style.opacity = "1.3";
     }
-    else{
+    else
+    {
         Support.style.display = "block";
+        overlay.style.opacity = "0.8";
     }
 }
+
+
 
 
 // Join us btn

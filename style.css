@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* Main */
 :root{
     --bs-red:#E53637;
     --bs-orange:#ef764c;
@@ -64,8 +66,7 @@ ul{list-style: none;}
     text-align: center;
     font-family: "Josefin Sans", sans-serif;
 }
-
-/* _____________________________________________________________ */
+/* ==========================================================*/
 /* Start Top Header */
 header{
     position: fixed;
@@ -233,8 +234,7 @@ header::after {
 }
 .navbar-nav .nav-item .nav-link:hover{color: var(--bs-red);}
 .navbar-nav .nav-item .active{color: var(--bs-red);} 
-
-/* End Nav Bar */
+/* -----------------------End Nav Bar --------------------- */
 
 /* Start Hero Section */
 .hero{
@@ -256,7 +256,6 @@ header::after {
     top: 10%;
     left: 15%;
 }
-/* Header content */
 .text{
     position: absolute;
     text-align: center;
@@ -369,7 +368,7 @@ header::after {
 @media (min-width:769px) and (max-width:1024px) {.text h1 img{width: 750px;}}
 
 /*-------------------------- End Header --------------------------*/
-/* Start Section 1 */
+/* Start rewards Section */
 .rewards{
     background-image: url(images/counter-bg.jpg);
     background-position: center;
@@ -416,7 +415,7 @@ header::after {
         gap: 15px;
     }
 }
-/*--------------------------- End Section 1 -------------------------*/
+/*--------------------------- End rewards Section  -------------------------*/
 
 /* Start PLAY AND WIN Section */
 .Games{
@@ -725,7 +724,6 @@ header::after {
     .Right-box .Right-content .L-content,
     .left-box .left-content .L-content{margin-bottom: 6px;}
 }
-
 @media (min-width:1025px) and (max-width:1200px) {
     Top-Players .sides{
         display: grid;
@@ -796,10 +794,8 @@ header::after {
     }
     .Wins-text h2{font-size: 40px;}
 }
-@media (min-width:1025px) and (max-width:1200px) {
-    
-}
 /*--------------------------- End Wins Section -------------------------*/
+
 /* Start HOW TO PLAY Section */
 .H-T-P{
     background-color: var(--bs-background);
@@ -1183,11 +1179,13 @@ header::after {
     display: none;
 }
 
+
 /* Join Us Modal */
 
 .dialog-window{
     border-radius: 10px;
     background: rgba(93, 33, 212, 0.8);
+    box-shadow: inset 0px 0px 12px 8px #00a2ff;
     border: 0px;
     position: fixed;
     top: 50%;
@@ -1197,7 +1195,7 @@ header::after {
     -moz-transform: translate(-50% , -50%);
     -ms-transform: translate(-50% , -50%);
     -o-transform: translate(-50% , -50%);
-    width: min(500px , 100%);
+    width: auto;
     margin: auto;
     display: none;
     z-index: 10000;
@@ -1215,16 +1213,15 @@ header::after {
 }
 .dialog-window .close{
     position: absolute;
-    top: 6px;
-    right: 10px;
+    top: 8px;
+    right: 15px;
     color: #fff;
     background-color: transparent;
     cursor: pointer;
     border: none;
+    font-size: 18px;
 }
-.modal-body{
-    margin: 50px;
-}
+.modal-body{margin: 50px;}
 .modal-body .btns-nav{
     display: flex;
     justify-content: center;
@@ -1236,7 +1233,7 @@ header::after {
     font-size: 18px;
     text-transform: uppercase;
     font-weight: 600;
-    padding: 10px 35px;
+    padding: 10px 25px;
     box-shadow: inset 0px 0px 8px 8px #fea036;
     color: var(--bs-white);
     border-radius: 50px;
