@@ -6,21 +6,9 @@ let blurer = document.getElementById('blurer');
 let overlay = document.getElementById('overlay');
 
 // Btn Scroll 
-window.onscroll = function(){
-    if(scrollY >= 600)
-    {
-        btn.style.display = "block";
-    }
-    else{
-        btn.style.display = "none";
-    }
-}
-btn.onclick = function(){
-    scroll({
-        left:0,
-        top:0,
-        behavior:'smooth'
-    })
+function scrollToTop()
+{
+    window.scrollTo(0 , 0);
 }
 
 // Remove Support Div
@@ -36,9 +24,6 @@ window.onscroll = function(){
         overlay.style.opacity = "0.8";
     }
 }
-
-
-
 
 // Join us btn
 function openDialog() {
